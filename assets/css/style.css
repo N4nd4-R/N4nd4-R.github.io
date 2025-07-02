@@ -1056,10 +1056,6 @@ body {
 /* =================================
    5. RESPONSIVE DESIGN (BREAKPOINTS)
    ================================= */
-@media (max-width: 1024px) {
-  section { padding: 100px 30px; }
-}
-
 @media (max-width: 768px) {
   section { padding: 80px 20px; }
 
