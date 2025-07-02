@@ -1057,19 +1057,65 @@ body {
    5. RESPONSIVE DESIGN (BREAKPOINTS)
    ================================= */
 @media (max-width: 768px) {
-  section { padding: 80px 20px; }
+  section {
+    padding: 80px 20px;
+  }
 
-  .hero, .about-section, .contact-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  
   .hero {
-    flex-direction: column-reverse; /* Foto di atas saat mobile */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
   }
-  
-  .photo-placeholder img { margin-bottom: 30px; }
-  .about-image img { margin-bottom: 30px; }
+
+  .hero .photo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .hero .photo-placeholder img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--dark-blue);
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    z-index: 1;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .hero .background-diagonal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-12deg);
+    background: var(--neon-green);
+    z-index: 0;
+    opacity: 0.8;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+  }
 
   .description, .about-content p {
     margin-left: auto;
@@ -1103,48 +1149,5 @@ body {
   .hamburger {
     display: block;
   }
-
-  .hero {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-  position: relative;
-  overflow: hidden;
 }
 
-.hero .photo-placeholder img {
-  width: 220px;
-  height: 220px;
-  margin-bottom: 20px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid var(--dark-blue);
-  box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-  word-break: break-word;
-}
-
-.hero-text p {
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-.hero .background-diagonal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: skewY(-12deg);
-  background: var(--neon-green);
-  z-index: -1;
-  opacity: 0.7;
-}
-
-}
