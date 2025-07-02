@@ -1080,8 +1080,8 @@ body {
   }
 
  .hero .photo-placeholder img {
-  width: 80vw; 
-  max-width: 280px;
+  width: 85vw; 
+  max-width: 295px;
   height: auto; 
   object-fit: cover;
   border-radius: 50%;
