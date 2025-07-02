@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // ===============================================
   // 4. TYPING EFFECT FOR HERO SECTION
   // ===============================================
-  const typedTextSpan = document.querySelector(".white");
+  const typedTextSpan = document.querySelector(".green");
   if (typedTextSpan) {
     const textArray = ["a Machine Learning", "a Data Sainst", "a Web Developer"];
     const typingDelay = 150;
