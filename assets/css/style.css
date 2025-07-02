@@ -6,7 +6,7 @@
   --slate: #8892b0;
   --font-sans: 'Poppins', sans-serif;
   --transition: all 0.3s ease-in-out;
-  --neon-green-darker: #2fe200;
+  --neon-green-darker: #27c200;
 }
 
 html {
@@ -183,7 +183,7 @@ section.visible {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--neon-green);
+  background-color: var(--neon-green-darker);
   z-index: -2;
   clip-path: none; /* Pastikan tidak terpotong */
 }
