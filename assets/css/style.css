@@ -1079,15 +1079,16 @@ body {
     z-index: 1;
   }
 
-  .hero .photo-placeholder img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--dark-blue);
-    box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
-    margin-bottom: 20px;
-  }
+ .hero .photo-placeholder img {
+  width: 80vw; 
+  max-width: 280px;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--dark-blue);
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
+  margin-bottom: 20px;
+}
 
   .hero-text {
     z-index: 1;
